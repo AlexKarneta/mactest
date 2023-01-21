@@ -1,31 +1,77 @@
-body{
-	background-color: #053A3D;
+/* *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
 }
-div{
-	height: 25px;
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	text-align: center;
+	background: url(./src/pexels-pixabay-268533.jpg) no-repeat center center/cover;
 }
 .container{
-	position: absolute;
-	top:50%;
-	left:50%;
-	transform: translate(-50%,-50%);
-	width: 40%;
-	margin: auto;
-	border: 3px solid #54E6E7;
-	background-color: #AAC6C6;
-	box-shadow: 0px 0px 15px #AAC6C6;
+	width: 550px;
+	height: 450px;
 }
-.progress{
-	width: 0%;
-	background-color: #1A2929;
-	opacity: 0.8;
-	animation: progress 2s infinite alternate;
+.header{
+	font-size: 1.2rem;
+	border: solid 2px #fff;
+	color: #fff;
+	background-color: #262626;
+	padding: 5px;
+	width: 80%;
+	margin: 20px auto;
+	border-radius: 5px;
+} */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-@keyframes progress{
-	0%{
-		width: 0%;
-	}
-	80%{
-		width: 80%;
-	}
+body{
+	height: 100vh;
+	background:url(./src/pexels-pixabay-268533.jpg) no-repeat center center/cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container{
+	width: 60%;
+	height: 250px;
+	background-color: #fff;
+	border-radius: 30px;
+	box-shadow: 0 0 3px;
+}
+#timer{
+	width: 100%;
+	font-size: 4rem;
+	text-align: center;
+	margin: 0px auto;
+	padding: 35px;
+
+}
+.buttons{
+	text-align: center;;
+}
+.button{
+	margin: 0 10px;
+	border: none;
+}
+.button i{
+	font-size: 2rem;
+	padding: 10px;
+	color: #fff;
+	width: 50px;
+}
+#play{
+background-color:green;
+}
+#reset{
+	background-color: red;
+}
+#pause{
+	background-color:orange;
 }
